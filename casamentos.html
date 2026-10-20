@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elo Films | Casamentos — Cinema Afetivo & Histórias de Amor</title>
+  <meta name="description" content="Portfólio de filmes de casamento da Elo Films. Documentamos histórias de amor com estética cinematográfica, cores quentes e sensibilidade artística." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            warm: {
+              50: '#FDF9F6',
+              100: '#F9EFE8',
+              200: '#F0D9C9',
+              700: '#8C4F32',
+              800: '#4A2B1D',
+              900: '#26160F',
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-warm-50 text-warm-900 font-sans antialiased selection:bg-amber-800 selection:text-amber-50">
+
+  <!-- Menu de Navegação -->
+  <header class="sticky top-0 z-40 bg-warm-50/90 backdrop-blur-md border-b border-amber-900/10">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between" aria-label="Navegação Principal">
+      <a href="index.html" class="flex items-center gap-2.5 group">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-600 transition-transform group-hover:scale-125"></span>
+        <span class="font-serif text-2xl font-bold tracking-widest uppercase text-warm-900">
+          Elo <span class="italic font-normal text-amber-700">Weddings</span>
+        </span>
+      </a>
+
+      <!-- Links Desktop -->
+      <ul class="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase text-warm-800/80 font-medium">
+        <li><a href="index.html" class="hover:text-amber-700 transition-colors">Início</a></li>
+        <li><a href="#portfolio" class="hover:text-amber-700 transition-colors">Portfólio</a></li>
+        <li><a href="#experiencia" class="hover:text-amber-700 transition-colors">A Experiência</a></li>
+        <li><a href="#contato" class="hover:text-amber-700 transition-colors">Contato</a></li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <a
+          href="corporativo.html"
+          class="hidden sm:inline-flex items-center gap-1.5 text-xs tracking-wider uppercase text-warm-800/70 hover:text-amber-800 border border-amber-900/20 px-3.5 py-2 rounded-full transition"
+          title="Ir para área Corporativa"
+        >
+          <span>Área Corporativa</span>
+          <span>&rarr;</span>
+        </a>
+        <a
+          href="#contato"
+          class="px-5 py-2.5 rounded-full bg-warm-800 hover:bg-amber-800 text-amber-50 font-serif italic text-base tracking-wide transition shadow-sm"
+        >
+          Reservar Data
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section Romântica -->
+  <section class="relative overflow-hidden py-20 md:py-28 bg-warm-900 text-warm-50">
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-35"
+      style="background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=85');"
+    ></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-warm-900 via-warm-900/70 to-transparent"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+      <p class="font-serif italic text-amber-300 text-lg md:text-xl tracking-widest mb-3">
+        Memórias vivas que atravessam gerações
+      </p>
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-semibold leading-tight mb-6">
+        A poesia do seu grande dia <br class="hidden sm:inline" />
+        <span class="italic font-normal text-amber-200">transformada em cinema</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-amber-100/80 text-base md:text-lg font-light leading-relaxed mb-10">
+        Capturamos o espontâneo, o toque sutil e a emoção genuína de cada celebração com direção sensível, som imersivo e color grading quente.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a
+          href="#portfolio"
+          class="px-8 py-3.5 rounded-full bg-amber-600 hover:bg-amber-500 text-white font-serif text-xl tracking-wide transition shadow-lg"
+        >
+          Assistir aos Filmes
+        </a>
+        <a
+          href="#contato"
+          class="px-8 py-3.5 rounded-full border border-amber-200/40 hover:bg-white/10 text-amber-100 font-serif text-xl tracking-wide transition"
+        >
+          Solicitar Orçamento
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Portfólio de Vídeos -->
+  <section id="portfolio" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+      <div>
+        <span class="text-xs tracking-[0.25em] uppercase text-amber-700 font-semibold block mb-2">
+          Curadoria de Histórias
+        </span>
+        <h2 class="font-serif text-4xl md:text-5xl font-semibold text-warm-900">
+          Portfólio de Casamentos
+        </h2>
+      </div>
+
+      <!-- Filtros do Portfólio -->
+      <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filtrar categoria de casamentos">
+        <button data-filter="all" class="filter-btn active px-4 py-1.5 rounded-full text-xs uppercase tracking-widest bg-warm-800 text-amber-50 transition">
+          Todos
+        </button>
+        <button data-filter="destination" class="filter-btn px-4 py-1.5 rounded-full text-xs uppercase tracking-widest border border-amber-900/20 text-warm-800 hover:bg-warm-100 transition">
+          Destination Wedding
+        </button>
+        <button data-filter="campo" class="filter-btn px-4 py-1.5 rounded-full text-xs uppercase tracking-widest border border-amber-900/20 text-warm-800 hover:bg-warm-100 transition">
+          No Campo
+        </button>
+        <button data-filter="elopement" class="filter-btn px-4 py-1.5 rounded-full text-xs uppercase tracking-widest border border-amber-900/20 text-warm-800 hover:bg-warm-100 transition">
+          Elopement
+        </button>
+      </div>
+    </div>
+
+    <!-- Grid de Filmes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+
+      <!-- Card 1 -->
+      <article data-category="destination" class="portfolio-item group bg-white rounded-2xl overflow-hidden shadow-md shadow-amber-950/5 border border-amber-900/10 flex flex-col">
+        <div class="relative aspect-video overflow-hidden bg-warm-900">
+          <img
+            src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80"
+            alt="Casamento Helena & Gabriel em Trancoso"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/45 transition flex items-center justify-center">
+            <button
+              onclick="openVideoModal('Helena & Gabriel — Trancoso, BA', 'Destination Wedding • 06:42')"
+              class="w-14 h-14 rounded-full bg-amber-50/95 text-warm-900 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition"
+              aria-label="Reproduzir filme de Helena e Gabriel"
+            >
+              <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-amber-200 text-[11px] tracking-widest uppercase">
+            Destination Wedding
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <p class="text-xs text-amber-700 uppercase tracking-widest mb-1">Trancoso • Bahia</p>
+            <h3 class="font-serif text-2xl font-semibold text-warm-900 mb-2">Helena &amp; Gabriel</h3>
+            <p class="text-sm text-warm-800/75 leading-relaxed">
+              Um pôr do sol dourado sobre as falésias, votos sussurrados ao som do mar e uma celebração sob as estrelas.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-amber-900/10 flex items-center justify-between text-xs text-warm-800/60">
+            <span>4K Cinema • Color Film</span>
+            <span>06:42 min</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article data-category="campo" class="portfolio-item group bg-white rounded-2xl overflow-hidden shadow-md shadow-amber-950/5 border border-amber-900/10 flex flex-col">
+        <div class="relative aspect-video overflow-hidden bg-warm-900">
+          <img
+            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80"
+            alt="Casamento Clara & Mateus na Fazenda"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/45 transition flex items-center justify-center">
+            <button
+              onclick="openVideoModal('Clara & Mateus — Itu, SP', 'Casamento no Campo • 08:15')"
+              class="w-14 h-14 rounded-full bg-amber-50/95 text-warm-900 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition"
+              aria-label="Reproduzir filme de Clara e Mateus"
+            >
+              <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-amber-200 text-[11px] tracking-widest uppercase">
+            No Campo
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <p class="text-xs text-amber-700 uppercase tracking-widest mb-1">Fazenda Vila Rica • Itu, SP</p>
+            <h3 class="font-serif text-2xl font-semibold text-warm-900 mb-2">Clara &amp; Mateus</h3>
+            <p class="text-sm text-warm-800/75 leading-relaxed">
+              Cerimônia intimista entre oliveiras centenárias com trilha sonora em cordas ao vivo e estética Super 8mm.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-amber-900/10 flex items-center justify-between text-xs text-warm-800/60">
+            <span>4K + Textura 8mm</span>
+            <span>08:15 min</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article data-category="elopement" class="portfolio-item group bg-white rounded-2xl overflow-hidden shadow-md shadow-amber-950/5 border border-amber-900/10 flex flex-col">
+        <div class="relative aspect-video overflow-hidden bg-warm-900">
+          <img
+            src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80"
+            alt="Elopement Sofia & Lucas na Toscana"
+            class="w-full h-full object-cover group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/45 transition flex items-center justify-center">
+            <button
+              onclick="openVideoModal('Sofia & Lucas — Val d’Orcia, Itália', 'Elopement Wedding • 05:10')"
+              class="w-14 h-14 rounded-full bg-amber-50/95 text-warm-900 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition"
+              aria-label="Reproduzir filme de Sofia e Lucas"
+            >
+              <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+          </div>
+          <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm text-amber-200 text-[11px] tracking-widest uppercase">
+            Elopement
+          </span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <p class="text-xs text-amber-700 uppercase tracking-widest mb-1">Val d’Orcia • Toscana</p>
+            <h3 class="font-serif text-2xl font-semibold text-warm-900 mb-2">Sofia &amp; Lucas</h3>
+            <p class="text-sm text-warm-800/75 leading-relaxed">
+              Apenas os dois, cartas escritas à mão e a luz dourada do outono italiano em um documentário poético.
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-amber-900/10 flex items-center justify-between text-xs text-warm-800/60">
+            <span>Narrativa Documental</span>
+            <span>05:10 min</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Diferenciais / A Experiência -->
+  <section id="experiencia" class="py-16 bg-warm-100 border-y border-amber-900/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+      <div class="p-6">
+        <span class="font-serif italic text-4xl text-amber-700 block mb-2">01.</span>
+        <h3 class="font-serif text-2xl font-semibold mb-2">Direção Invisível &amp; Sensível</h3>
+        <p class="text-sm text-warm-800/75 leading-relaxed">
+          Deixamos o dia fluir com naturalidade para registrar sorrisos, abraços e lágrimas reais sem poses artificiais.
+        </p>
+      </div>
+      <div class="p-6">
+        <span class="font-serif italic text-4xl text-amber-700 block mb-2">02.</span>
+        <h3 class="font-serif text-2xl font-semibold mb-2">Design de Som Autoral</h3>
+        <p class="text-sm text-warm-800/75 leading-relaxed">
+          Captação cristalina dos votos e ambiência combinada com trilhas licenciadas que constroem a emoção do filme.
+        </p>
+      </div>
+      <div class="p-6">
+        <span class="font-serif italic text-4xl text-amber-700 block mb-2">03.</span>
+        <h3 class="font-serif text-2xl font-semibold mb-2">Same Day Edit &amp; Teasers</h3>
+        <p class="text-sm text-warm-800/75 leading-relaxed">
+          Entregamos pílulas cinematográficas em formato vertical e edição no mesmo dia para emocionar todos os convidados.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé com Links para Contato -->
+  <footer id="contato" class="bg-warm-900 text-amber-50/90 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-amber-200/15">
+      <div class="md:col-span-2">
+        <span class="font-serif text-3xl font-bold tracking-widest uppercase text-amber-100 block mb-3">
+          Elo <span class="italic font-normal text-amber-400">Films</span>
+        </span>
+        <p class="font-serif text-xl italic text-amber-200/90 mb-4">
+          "Contem-nos sobre a história de vocês. Vamos adorar transformá-la em filme."
+        </p>
+        <p class="text-sm text-amber-100/65 max-w-md leading-relaxed">
+          Atendemos casamentos em todo o Brasil e no exterior com agenda limitada para garantir curadoria artesanal em cada edição.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-serif text-lg uppercase tracking-widest text-amber-300 mb-4">Contato Direto</h4>
+        <ul class="space-y-2.5 text-sm text-amber-100/80">
+          <li>
+            <a href="https://wa.me/5511999990000" target="_blank" rel="noopener" class="hover:text-amber-300 transition">
+              WhatsApp: +55 (11) 99999-0000
+            </a>
+          </li>
+          <li>
+            <a href="mailto:casamentos@elofilms.com.br" class="hover:text-amber-300 transition">
+              casamentos@elofilms.com.br
+            </a>
+          </li>
+          <li class="text-amber-100/60">São Paulo, SP — Atendimento sob hora marcada</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-serif text-lg uppercase tracking-widest text-amber-300 mb-4">Redes &amp; Links</h4>
+        <ul class="space-y-2.5 text-sm text-amber-100/80">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-amber-300 transition">Instagram (@elofilms.weddings)</a></li>
+          <li><a href="https://vimeo.com" target="_blank" rel="noopener" class="hover:text-amber-300 transition">Vimeo Showcase</a></li>
+          <li><a href="https://pinterest.com" target="_blank" rel="noopener" class="hover:text-amber-300 transition">Pinterest</a></li>
+          <li><a href="corporativo.html" class="text-amber-300 hover:underline transition">Conhecer Elo Corporate &rarr;</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-amber-200/50 gap-4">
+      <p>&copy; 2026 Elo Films Produtora Audiovisual. Todos os direitos reservados.</p>
+      <a href="index.html" class="hover:text-amber-200 transition">&larr; Voltar para a Tela Dividida</a>
+    </div>
+  </footer>
+
+  <!-- Modal de Pré-visualização de Vídeo -->
+  <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/85 backdrop-blur-md p-4">
+    <div class="relative w-full max-w-4xl bg-warm-900 border border-amber-200/20 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-amber-200/10">
+        <div>
+          <h3 id="modal-title" class="font-serif text-2xl text-amber-100">Título do Filme</h3>
+          <p id="modal-subtitle" class="text-xs uppercase tracking-widest text-amber-400"></p>
+        </div>
+        <button onclick="closeVideoModal()" class="text-amber-200/70 hover:text-white p-2" aria-label="Fechar player">
+          ✕
+        </button>
+      </div>
+      <div class="aspect-video bg-black flex flex-col items-center justify-center text-center p-8">
+        <div class="w-16 h-16 rounded-full border border-amber-400/50 flex items-center justify-center text-amber-300 mb-4 animate-pulse">
+          <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <p class="font-serif italic text-2xl text-amber-100 mb-2">Player Demonstrativo — Elo Weddings 4K</p>
+        <p class="text-sm text-amber-200/60 max-w-md">
+          Substitua este container pelo embed do seu vídeo no Vimeo ou YouTube (iframe) para reprodução real.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Filtro de categorias do portfólio
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        filterButtons.forEach((b) => {
+          b.classList.remove('bg-warm-800', 'text-amber-50');
+          b.classList.add('border', 'border-amber-900/20', 'text-warm-800');
+        });
+        btn.classList.add('bg-warm-800', 'text-amber-50');
+        btn.classList.remove('border', 'border-amber-900/20', 'text-warm-800');
+
+        items.forEach((item) => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Modal de vídeo
+    function openVideoModal(title, subtitle) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-subtitle').textContent = subtitle;
+      const modal = document.getElementById('video-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  </script>
+</body>
+</html>
